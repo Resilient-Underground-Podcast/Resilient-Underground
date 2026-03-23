@@ -19,6 +19,7 @@ a {
   text-decoration: none;
 }
 
+/* HERO SECTION */
 .hero {
   background:
     linear-gradient(90deg, rgba(8, 10, 13, 0.82) 0%, rgba(8, 10, 13, 0.55) 45%, rgba(8, 10, 13, 0.35) 100%),
@@ -31,9 +32,10 @@ a {
   flex-direction: column;
 }
 
+/* NAV */
 .nav {
   max-width: 1120px;
-  margin: 0 auto 72px;
+  margin: 0 auto 60px;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -44,9 +46,17 @@ a {
 .brand {
   font-size: 1.15rem;
   font-weight: 700;
-  letter-spacing: 0.4px;
 }
 
+.logo-main {
+  font-weight: 800;
+}
+
+.logo-accent {
+  color: #c7a66a;
+}
+
+/* NAV LINKS */
 .nav-links {
   display: flex;
   gap: 18px;
@@ -62,6 +72,7 @@ a {
   color: #ffffff;
 }
 
+/* HERO CONTENT */
 .hero-inner {
   max-width: 1120px;
   margin: auto auto 0;
@@ -94,6 +105,7 @@ h1 {
   text-shadow: 0 2px 10px rgba(0, 0, 0, 0.45);
 }
 
+/* BUTTONS */
 .hero-actions {
   margin-top: 30px;
   display: flex;
@@ -125,6 +137,7 @@ h1 {
   background: transparent;
 }
 
+/* SECTIONS */
 .section {
   max-width: 1120px;
   margin: 0 auto;
@@ -153,6 +166,7 @@ h1 {
   max-width: 760px;
 }
 
+/* CARDS */
 .card {
   background: #151b21;
   border: 1px solid #2a333c;
@@ -163,9 +177,9 @@ h1 {
 
 .card h3 {
   margin-top: 0;
-  margin-bottom: 12px;
 }
 
+/* GRID */
 .two-column {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -182,10 +196,7 @@ h1 {
   color: #f6e3bf;
 }
 
-.launch-card {
-  max-width: 1120px;
-}
-
+/* EMAIL SIGNUP */
 .signup {
   display: flex;
   gap: 12px;
@@ -196,16 +207,11 @@ h1 {
 .signup input {
   flex: 1 1 280px;
   min-width: 260px;
-  padding: 14px 14px;
+  padding: 14px;
   border-radius: 10px;
   border: 1px solid #39444f;
   background: #0f1419;
   color: #f4f1ea;
-  font-size: 1rem;
-}
-
-.signup input::placeholder {
-  color: #98a3ad;
 }
 
 .signup button {
@@ -218,49 +224,21 @@ h1 {
   cursor: pointer;
 }
 
-.small-note {
-  margin-top: 14px;
-  color: #9eabb6;
-  font-size: 0.92rem;
-}
-
+/* FOOTER */
 .footer {
   text-align: center;
-  padding: 30px 20px 42px;
+  padding: 30px;
   color: #93a0ac;
-  font-size: 0.95rem;
 }
 
+/* RESPONSIVE */
 @media (max-width: 900px) {
   h1 {
-    font-size: 2.7rem;
+    font-size: 2.6rem;
   }
 
   .two-column,
   .grid {
     grid-template-columns: 1fr;
-  }
-}
-
-@media (max-width: 640px) {
-  .hero {
-    padding-top: 20px;
-    padding-bottom: 72px;
-  }
-
-  .nav {
-    margin-bottom: 50px;
-  }
-
-  h1 {
-    font-size: 2.2rem;
-  }
-
-  .section-header h2 {
-    font-size: 1.75rem;
-  }
-
-  .card {
-    padding: 22px;
   }
 }
