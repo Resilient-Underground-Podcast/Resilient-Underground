@@ -21,10 +21,13 @@ a {
 
 .hero {
   background:
-    linear-gradient(180deg, rgba(8, 10, 13, 0.75), rgba(8, 10, 13, 0.92)),
-    url("hero.jpg") center/cover no-repeat;
+    linear-gradient(180deg, rgba(8, 10, 13, 0.55), rgba(8, 10, 13, 0.82)),
+    url("hero.jpg") center center / cover no-repeat;
   border-bottom: 1px solid #242c33;
   padding: 24px 24px 88px;
+  min-height: 680px;
+  display: flex;
+  flex-direction: column;
 }
 
 .nav {
