@@ -1,3 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Resilient Underground</title>
+  <meta
+    name="description"
+    content="Resilient Underground is a podcast and platform focused on resilience, mental strength, sobriety, fatherhood, service, and rebuilding after adversity."
+  />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="hero">
+    <nav class="nav">
+      <div class="brand">Resilient Underground</div>
+      <div class="nav-links">
+        <a href="#mission">Mission</a>
+        <a href="#host">Host</a>
+        <a href="#topics">Topics</a>
+        <a href="#launch">Launch</a>
+      </div>
+    </nav>
+
+    <div class="hero-inner">
+      <p class="eyebrow">A platform for grit, growth, and rebuilding</p>
+      <h1>Stay Grounded. Stay Strong.</h1>
+      <p class="hero-copy">
+        Resilient Underground is built for people who have been through hard things
+        and are still moving forward with strength, honesty, and purpose.
+      </p>
+      <div class="hero-actions">
+        <a class="button button-gold" href="#launch">Get Launch Updates</a>
+        <a class="button button-outline" href="#host">Read the Story</a>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section id="mission" class="section">
+      <div class="section-header">
+        <p class="section-kicker">Mission</p>
+        <h2>Built for people who’ve been through something</h2>
+      </div>
+      <div class="card">
+        <p>
+          Resilient Underground is not surface-level motivation. It is a place for
+          real conversations about discipline, resilience, mental health, sobriety,
+          fatherhood, service, and life after adversity.
+        </p>
+        <p>
+          The mission is simple: create honest content for people trying to stay
+          grounded while rebuilding, leading, healing, and moving forward.
+        </p>
+      </div>
+    </section>
+
+    <section id="host" class="section section-alt">
+      <div class="section-header">
+        <p class="section-kicker">About the Host</p>
+        <h2>Why this platform exists</h2>
+      </div>
+      <div class="two-column">
+        <div class="card">
+          <h3>Steven Littlefield</h3>
+          <p>
+            Steven is a Marine Corps veteran, father, and builder of Resilient
+            Underground. His story includes anxiety, substance struggles, personal
+            rebuilding, and the discipline required to create a life with purpose.
+          </p>
+          <p>
+            This platform was created to say the quiet part out loud: real growth is
+            difficult, often messy, and rarely linear. But it is possible.
+          </p>
+        </div>
+
+        <div class="card">
+          <h3>What you’ll find here</h3>
+          <p>
+            Thoughtful conversations, practical perspective, and content for people
+            navigating hard seasons while trying to become stronger, steadier, and
+            more intentional in how they live.
+          </p>
+          <p>
+            This is about resilience with substance, not performance.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section id="topics" class="section">
+      <div class="section-header">
+        <p class="section-kicker">Topics</p>
+        <h2>What Resilient Underground covers</h2>
+      </div>
+
+      <div class="grid">
+        <div class="card topic-card">
+          <h3>Resilience</h3>
+          <p>How to keep moving forward when life gets heavy.</p>
+        </div>
+        <div class="card topic-card">
+          <h3>Mental Strength</h3>
+          <p>Honest discussion around anxiety, mindset, and internal battles.</p>
+        </div>
+        <div class="card topic-card">
+          <h3>Sobriety & Rebuilding</h3>
+          <p>Discipline, recovery, and building a stronger life over time.</p>
+        </div>
+        <div class="card topic-card">
+          <h3>Fatherhood</h3>
+          <p>Responsibility, leadership, and showing up for the people who matter.</p>
+        </div>
+        <div class="card topic-card">
+          <h3>Service & Transition</h3>
+          <p>Lessons from military life and the shift into civilian purpose.</p>
+        </div>
+        <div class="card topic-card">
+          <h3>Purpose</h3>
+          <p>Creating meaning, direction, and a grounded life after hardship.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="launch" class="section section-alt">
+      <div class="section-header">
+        <p class="section-kicker">Launching Soon</p>
+        <h2>The first episodes are being prepared now</h2>
+      </div>
+
+      <div class="card launch-card">
+        <p>
+          Resilient Underground will launch with honest, grounded conversations that
+          speak to adversity, rebuilding, growth, service, and purpose.
+        </p>
+        <p>
+          If you want to follow the launch, use the email field below as a placeholder
+          for your future email list integration.
+        </p>
+
+        <div class="signup">
+          <input type="email" placeholder="Enter your email" />
+          <button>Notify Me</button>
+        </div>
+
+        <p class="small-note">
+          This form is currently a visual placeholder until email integration is added.
+        </p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <p>© 2026 Resilient Underground. All rights reserved.</p>
+  </footer>
+</body>
+</html>
 * {
   box-sizing: border-box;
 }
@@ -19,23 +176,17 @@ a {
   text-decoration: none;
 }
 
-/* HERO SECTION */
-.Hero {
+.hero {
   background:
-    linear-gradient(90deg, rgba(8, 10, 13, 0.82) 0%, rgba(8, 10, 13, 0.55) 45%, rgba(8, 10, 13, 0.35) 100%),
-    linear-gradient(180deg, rgba(8, 10, 13, 0.35) 0%, rgba(8, 10, 13, 0.78) 100%),
-    url("Hero.jpg") center center / cover no-repeat;
+    linear-gradient(180deg, rgba(8, 10, 13, 0.72), rgba(8, 10, 13, 0.92)),
+    linear-gradient(135deg, #1a2128 0%, #0b0d10 55%, #11161c 100%);
   border-bottom: 1px solid #242c33;
   padding: 24px 24px 88px;
-  min-height: 720px;
-  display: flex;
-  flex-direction: column;
 }
 
-/* NAV */
 .nav {
   max-width: 1120px;
-  margin: 0 auto 60px;
+  margin: 0 auto 72px;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -46,17 +197,9 @@ a {
 .brand {
   font-size: 1.15rem;
   font-weight: 700;
+  letter-spacing: 0.4px;
 }
 
-.logo-main {
-  font-weight: 800;
-}
-
-.logo-accent {
-  color: #c7a66a;
-}
-
-/* NAV LINKS */
 .nav-links {
   display: flex;
   gap: 18px;
@@ -72,11 +215,9 @@ a {
   color: #ffffff;
 }
 
-/* HERO CONTENT */
-.Hero-inner {
+.hero-inner {
   max-width: 1120px;
-  margin: auto auto 0;
-  width: 100%;
+  margin: 0 auto;
 }
 
 .eyebrow,
@@ -94,18 +235,15 @@ h1 {
   font-size: 3.6rem;
   line-height: 1.05;
   max-width: 760px;
-  text-shadow: 0 4px 18px rgba(0, 0, 0, 0.45);
 }
 
-.Hero-copy {
+.hero-copy {
   margin-top: 20px;
   max-width: 700px;
   color: #d1d6db;
   font-size: 1.1rem;
-  text-shadow: 0 2px 10px rgba(0, 0, 0, 0.45);
 }
 
-/* BUTTONS */
 .hero-actions {
   margin-top: 30px;
   display: flex;
@@ -137,7 +275,6 @@ h1 {
   background: transparent;
 }
 
-/* SECTIONS */
 .section {
   max-width: 1120px;
   margin: 0 auto;
@@ -166,7 +303,6 @@ h1 {
   max-width: 760px;
 }
 
-/* CARDS */
 .card {
   background: #151b21;
   border: 1px solid #2a333c;
@@ -177,9 +313,9 @@ h1 {
 
 .card h3 {
   margin-top: 0;
+  margin-bottom: 12px;
 }
 
-/* GRID */
 .two-column {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -196,7 +332,10 @@ h1 {
   color: #f6e3bf;
 }
 
-/* EMAIL SIGNUP */
+.launch-card {
+  max-width: 1120px;
+}
+
 .signup {
   display: flex;
   gap: 12px;
@@ -207,11 +346,16 @@ h1 {
 .signup input {
   flex: 1 1 280px;
   min-width: 260px;
-  padding: 14px;
+  padding: 14px 14px;
   border-radius: 10px;
   border: 1px solid #39444f;
   background: #0f1419;
   color: #f4f1ea;
+  font-size: 1rem;
+}
+
+.signup input::placeholder {
+  color: #98a3ad;
 }
 
 .signup button {
@@ -224,21 +368,49 @@ h1 {
   cursor: pointer;
 }
 
-/* FOOTER */
-.footer {
-  text-align: center;
-  padding: 30px;
-  color: #93a0ac;
+.small-note {
+  margin-top: 14px;
+  color: #9eabb6;
+  font-size: 0.92rem;
 }
 
-/* RESPONSIVE */
+.footer {
+  text-align: center;
+  padding: 30px 20px 42px;
+  color: #93a0ac;
+  font-size: 0.95rem;
+}
+
 @media (max-width: 900px) {
   h1 {
-    font-size: 2.6rem;
+    font-size: 2.7rem;
   }
 
   .two-column,
   .grid {
     grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 640px) {
+  .hero {
+    padding-top: 20px;
+    padding-bottom: 72px;
+  }
+
+  .nav {
+    margin-bottom: 50px;
+  }
+
+  h1 {
+    font-size: 2.2rem;
+  }
+
+  .section-header h2 {
+    font-size: 1.75rem;
+  }
+
+  .card {
+    padding: 22px;
   }
 }
