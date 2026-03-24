@@ -1,345 +1,169 @@
-* {
-box-sizing: border-box;
-}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>Blog | Resilient Underground</title>
+<meta name="description" content="Blog posts from Resilient Underground on resilience, mental health, rebuilding, fatherhood, and purpose." />
+<link rel="stylesheet" href="styles.css"/>
+</head>
+<body>
 
-html {
-scroll-behavior: smooth;
-}
+<header class="hero" style="min-height: 380px;">
+<nav class="nav">
+<div class="brand">
+<span class="logo-main">Resilient</span>
+<span class="logo-accent">Underground</span>
+</div>
 
-body {
-margin: 0;
-font-family: Arial, Helvetica, sans-serif;
-background: #0b0d10;
-color: #f4f1ea;
-line-height: 1.65;
-}
+<div class="nav-links">
+<a href="index.html">Home</a>
+<a href="podcast.html">Podcast</a>
+<a href="#posts">Posts</a>
+<a href="#featured-post">Featured</a>
+</div>
+</nav>
 
-a {
-color: inherit;
-text-decoration: none;
-}
+<div class="hero-inner">
+<p class="eyebrow">Blog</p>
+<h1>Stories, perspective, and practical reflection.</h1>
+<p class="hero-copy">
+Writing from Resilient Underground on adversity, discipline, service, recovery,
+fatherhood, and building a grounded life.
+</p>
+</div>
+</header>
 
-/* HERO SECTION */
-.hero {
-position: relative;
-background:
-linear-gradient(90deg, rgba(8, 10, 13, 0.82) 0%, rgba(8, 10, 13, 0.55) 45%, rgba(8, 10, 13, 0.35) 100%),
-linear-gradient(180deg, rgba(8, 10, 13, 0.35) 0%, rgba(8, 10, 13, 0.78) 100%),
-url("Hero.jpg") center center / cover no-repeat;
-border-bottom: 1px solid #242c33;
-padding: 24px 24px 88px;
-min-height: 720px;
-display: flex;
-flex-direction: column;
-}
+<main>
+<section id="featured-post" class="section">
+<div class="section-header">
+<p class="section-kicker">Featured Post</p>
+<h2>Start here</h2>
+</div>
 
-.hero::after {
-content: "";
-position: absolute;
-bottom: 0;
-left: 0;
-width: 100%;
-height: 120px;
-background: linear-gradient(to bottom, transparent, #0b0d10);
-pointer-events: none;
-}
+<div class="card">
+<p class="eyebrow">Coming Soon</p>
+<h3>The work of rebuilding after hard seasons</h3>
+<p>
+This featured article space is where your strongest long-form piece will go.
+It can serve as your anchor post — the piece that explains your mission,
+your voice, and what Resilient Underground stands for.
+</p>
+<p>
+Good first blog topics could include rebuilding after adversity, learning
+discipline the hard way, what resilience actually looks like in real life,
+or how fatherhood and responsibility reshape purpose.
+</p>
+</div>
+</section>
 
-.nav {
-max-width: 1120px;
-margin: 0 auto 60px;
-display: flex;
-justify-content: space-between;
-align-items: center;
-gap: 20px;
-flex-wrap: wrap;
-position: relative;
-z-index: 2;
-}
+<section id="posts" class="section section-alt">
+<div class="section-header">
+<p class="section-kicker">Recent Posts</p>
+<h2>What’s coming to the blog</h2>
+</div>
 
-.brand {
-font-size: 1.15rem;
-font-weight: 700;
-}
+<div class="grid">
+<a href="post-1.html" class="post-link">
+<div class="card topic-card">
+<p class="eyebrow">Post 1</p>
+<h3>What resilience actually looks like</h3>
+<p>
+A grounded post on resilience beyond clichés, including the quiet,
+repetitive work of staying steady when life is heavy.
+</p>
+</div>
+</a>
 
-.logo-main {
-font-weight: 800;
-}
+<a href="post-2.html" class="post-link">
+<div class="card topic-card">
+<p class="eyebrow">Post 2</p>
+<h3>Rebuilding Your Life After Chaos</h3>
+<p>
+A grounded look at rebuilding structure, discipline, and stability after
+difficult seasons.
+</p>
+</div>
+</a>
 
-.logo-accent {
-color: #c7a66a;
-}
+<a href="post-3.html" class="post-link">
+<div class="card topic-card">
+<p class="eyebrow">Post 3</p>
+<h3>Discipline Over Motivation</h3>
+<p>
+Why discipline—not motivation—is the key to rebuilding your life and staying consistent.
+</p>
+</div>
+</a>
 
-.nav-links {
-display: flex;
-gap: 18px;
-flex-wrap: wrap;
-}
+<a href="post-4.html" class="post-link">
+<div class="card topic-card">
+<p class="eyebrow">Post 4</p>
+<h3>Life After Service</h3>
+<p>
+A reflection on transitioning from military structure to civilian life and rebuilding purpose.
+</p>
+</div>
+</a>
 
-.nav-links a {
-color: #c0c7cd;
-font-size: 0.96rem;
-}
+      <div class="card topic-card">
+        <p class="eyebrow">Post 5</p>
+        <h3>Sobriety, rebuilding, and long-term strength</h3>
+        <p>
+          A post on recovery, discipline, and the long-view mindset required
+          to build a stronger life over time.
+        </p>
+      </div>
+      <a href="post-5.html" class="post-link">
+  <div class="card topic-card">
+    <p class="eyebrow">Post 5</p>
+    <h3>Sobriety, Rebuilding, and the Long Road Back</h3>
+    <p>
+      A grounded look at sobriety, discipline, and the long-term process of rebuilding your life.
+    </p>
+  </div>
+</a>
 
-.nav-links a:hover {
-color: #ffffff;
-}
+<div class="card topic-card">
+<p class="eyebrow">Post 6</p>
+<h3>Purpose is built, not found</h3>
+<p>
+A piece on how purpose often comes from action, responsibility,
+consistency, and a willingness to keep moving forward.
+</p>
+</div>
+</div>
+</section>
 
-.hero-inner {
-max-width: 1120px;
-margin: auto auto 0;
-width: 100%;
-position: relative;
-z-index: 2;
-}
+<section class="section">
+<div class="section-header">
+<p class="section-kicker">Why the Blog Matters</p>
+<h2>More than a podcast companion</h2>
+</div>
 
-.eyebrow,
-.section-kicker {
-margin: 0 0 10px;
-text-transform: uppercase;
-letter-spacing: 1.8px;
-font-size: 0.78rem;
-color: #c7a66a;
-font-weight: 700;
-}
+<div class="two-column">
+<div class="card">
+<h3>Build authority</h3>
+<p>
+Your blog gives Google more content to index and gives readers a deeper
+way to connect with your message even before they listen to an episode.
+</p>
+</div>
 
-h1 {
-margin: 0;
-font-size: 3.6rem;
-line-height: 1.05;
-max-width: 760px;
-text-shadow: 0 4px 18px rgba(0, 0, 0, 0.45);
-}
+<div class="card">
+<h3>Create depth</h3>
+<p>
+Some ideas need more room than a short episode introduction. Writing lets
+you go deeper into lessons, experiences, and practical frameworks.
+</p>
+</div>
+</div>
+</section>
+</main>
 
-.hero-copy {
-margin-top: 20px;
-max-width: 700px;
-color: #d1d6db;
-font-size: 1.1rem;
-text-shadow: 0 2px 10px rgba(0, 0, 0, 0.45);
-}
+<footer class="footer">
+<p>© 2026 Resilient Underground. All rights reserved.</p>
+</footer>
 
-.hero-actions {
-margin-top: 30px;
-display: flex;
-gap: 14px;
-flex-wrap: wrap;
-}
-
-.button {
-display: inline-block;
-padding: 13px 18px;
-border-radius: 10px;
-font-weight: 700;
-transition: transform 0.15s ease, opacity 0.15s ease;
-}
-
-.button:hover {
-transform: translateY(-1px);
-opacity: 0.96;
-}
-
-.button-gold {
-background: #c7a66a;
-color: #111418;
-}
-
-.button-outline {
-border: 1px solid #505b65;
-color: #f4f1ea;
-background: transparent;
-}
-
-/* MAIN CONTENT */
-main {
-background: #0b0d10;
-}
-
-.section {
-max-width: 1120px;
-margin: 0 auto;
-padding: 76px 24px;
-background: #0b0d10;
-}
-
-.section-alt {
-max-width: none;
-background: #12171d;
-border-top: 1px solid #202830;
-border-bottom: 1px solid #202830;
-}
-
-.section-alt .section-header,
-.section-alt .two-column,
-.section-alt .launch-card,
-.section-alt .grid {
-max-width: 1120px;
-margin-left: auto;
-margin-right: auto;
-}
-
-.section-header h2 {
-margin: 0 0 26px;
-font-size: 2.1rem;
-line-height: 1.15;
-max-width: 760px;
-color: #f4f1ea;
-}
-
-.section h2,
-.section p,
-.section li,
-.section h3,
-.section-alt h2,
-.section-alt p,
-.section-alt li,
-.section-alt h3 {
-color: #e6e6e6;
-}
-
-/* CARDS */
-.card {
-background: #151b21;
-border: 1px solid #2a333c;
-border-radius: 16px;
-padding: 28px;
-box-shadow: 0 12px 30px rgba(0, 0, 0, 0.18);
-}
-
-.card h3 {
-margin-top: 0;
-}
-
-.two-column {
-display: grid;
-grid-template-columns: 1fr 1fr;
-gap: 22px;
-}
-
-.grid {
-display: grid;
-grid-template-columns: repeat(3, 1fr);
-gap: 22px;
-}
-
-.topic-card h3 {
-color: #f6e3bf;
-}
-
-/* HOST PHOTO */
-.host-photo {
-width: 100%;
-border-radius: 12px;
-object-fit: cover;
-display: block;
-}
-
-/* EMAIL SIGNUP */
-.signup {
-display: flex;
-gap: 12px;
-margin-top: 22px;
-flex-wrap: wrap;
-}
-
-.signup input {
-flex: 1 1 280px;
-min-width: 260px;
-padding: 14px;
-border-radius: 10px;
-border: 1px solid #39444f;
-background: #0f1419;
-color: #f4f1ea;
-}
-
-.signup input::placeholder {
-color: #98a3ad;
-}
-
-.signup button {
-padding: 14px 18px;
-border: none;
-border-radius: 10px;
-background: #c7a66a;
-color: #111418;
-font-weight: 700;
-cursor: pointer;
-}
-
-.small-note {
-color: #9eabb6;
-margin-top: 12px;
-}
-
-/* FOOTER */
-.footer {
-text-align: center;
-padding: 30px;
-color: #93a0ac;
-background: #0b0d10;
-}
-
-/* RESPONSIVE */
-@media (max-width: 900px) {
-h1 {
-font-size: 2.6rem;
-}
-
-.two-column,
-.grid {
-grid-template-columns: 1fr;
-}
-
-.hero {
-min-height: 620px;
-}
-}
-
-@media (max-width: 640px) {
-.hero {
-padding: 20px 20px 72px;
-min-height: 560px;
-background-position: center center;
-}
-
-.nav {
-margin: 0 auto 40px;
-}
-
-h1 {
-font-size: 2.2rem;
-}
-
-.hero-copy {
-font-size: 1rem;
-}
-
-.section {
-padding: 60px 20px;
-}
-}
-.blog-container {
-  max-width: 760px;
-  margin: 0 auto;
-}
-
-.blog-container h2 {
-  margin-top: 40px;
-  font-size: 1.6rem;
-}
-
-.blog-container p {
-  margin: 16px 0;
-  font-size: 1.05rem;
-  color: #d1d6db;
-}
-
-.blog-intro {
-  font-size: 1.2rem;
-  font-weight: 500;
-  color: #f4f1ea;
-}
-
-.blog-close {
-  margin-top: 40px;
-  font-weight: 500;
-}
+</body>
+</html>
