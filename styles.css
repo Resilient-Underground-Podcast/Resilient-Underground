@@ -19,6 +19,8 @@ body {
   justify-content: space-between;
   align-items: center;
   padding: 24px 32px;
+  position: relative;
+  z-index: 10;
 }
 
 .nav-links a {
@@ -58,6 +60,7 @@ body {
 /* No image overlay in hero right now */
 .hero::before {
   content: none;
+  pointer-events: none;
 }
 
 .hero-inner {
