@@ -4,7 +4,8 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Podcast | Resilient Underground</title>
-  <link rel="stylesheet" href="styles.css?v=20260401-1"/>
+  <meta name="description" content="Listen to Resilient Underground—conversations about resilience, mental strength, rebuilding, and purpose." />
+  <link rel="stylesheet" href="styles.css?v=20260402-1"/>
 </head>
 <body>
 
@@ -34,53 +35,78 @@
 
 <main>
 
+<!--
+  Libsyn connection (one-time):
+  1. Player: Libsyn Dashboard → Content → open an episode → "Link / Embed" (or Quick Links) → Embed Code.
+     Copy the iframe’s entire `src` URL (starts with https://html5-player.libsyn.com/...) and paste it
+     into the iframe `src` below, replacing the placeholder URL entirely.
+  2. Show page: Replace YOURSHOW in https://YOURSHOW.libsyn.com with your Libsyn podcast subdomain (Settings → Show Settings).
+  3. RSS: Dashboard → Destinations → Libsyn Classic Feed (or Feed & Website) — copy the RSS URL for the RSS link below.
+  4. Apple / Spotify: Use the links from Apple Podcasts Connect and Spotify for Podcasters once the show is listed.
+-->
+
 <section class="section">
   <div class="section-header">
-    <p class="section-kicker">Featured Episode</p>
-    <h2>Launching Soon</h2>
+    <p class="section-kicker">Listen now</p>
+    <h2>Latest episode</h2>
   </div>
 
-  <div class="card">
+  <div class="card podcast-player-card">
     <p>
-      The first episodes are currently being recorded. This podcast will launch soon
-      with honest, grounded conversations about life after adversity.
+      Use the player below to listen in the browser. It is powered by your Libsyn-hosted episode.
     </p>
+    <div class="podcast-embed">
+      <iframe
+        class="podcast-embed__frame"
+        title="Resilient Underground — Libsyn player"
+        src="https://html5-player.libsyn.com/embed/episode/id/REPLACE_EPISODE_ID/height/90/theme/custom/thumbnail/yes/direction/backward/desc/yes/font-height/75/"
+        loading="lazy"
+        allowfullscreen
+      ></iframe>
+    </div>
   </div>
 </section>
 
 <section class="section section-alt">
   <div class="section-header">
     <p class="section-kicker">Episodes</p>
-    <h2>What’s Coming</h2>
+    <h2>Archive &amp; more</h2>
   </div>
 
-  <div class="grid">
-    <div class="card">
-      <h3>Episode 1</h3>
-      <p>Coming Soon</p>
-    </div>
-
-    <div class="card">
-      <h3>Episode 2</h3>
-      <p>Coming Soon</p>
-    </div>
-
-    <div class="card">
-      <h3>Episode 3</h3>
-      <p>Coming Soon</p>
-    </div>
+  <div class="card">
+    <h3>Full catalog on Libsyn</h3>
+    <p>
+      Every episode is published through Libsyn. When you add new episodes in the dashboard, update the
+      “latest episode” player above with that episode’s embed code, or link visitors to your Libsyn site.
+    </p>
+    <p>
+      <a class="listen-link-cta" href="https://YOURSHOW.libsyn.com">Open podcast site on Libsyn</a>
+    </p>
+    <p class="small-note">Replace <code>YOURSHOW</code> with your Libsyn show subdomain (same as in your Libsyn URL).</p>
   </div>
 </section>
 
 <section class="section">
   <div class="section-header">
     <p class="section-kicker">Listen</p>
-    <h2>Available On</h2>
+    <h2>Subscribe &amp; follow</h2>
   </div>
 
-  <div class="card">
-    <p>
-      Libsyn | Spotify | Apple Podcasts
+  <div class="card listen-card">
+    <p>Subscribe in your favorite app (add your real URLs as your show goes live on each platform).</p>
+    <ul class="listen-list">
+      <li>
+        <a class="listen-link" href="https://feeds.libsyn.com/YOUR_FEED_PATH/rss">RSS feed</a>
+      </li>
+      <li>
+        <a class="listen-link" href="https://podcasts.apple.com/us/podcast/idYOUR_APPLE_ID">Apple Podcasts</a>
+      </li>
+      <li>
+        <a class="listen-link" href="https://open.spotify.com/show/YOUR_SPOTIFY_SHOW_ID">Spotify</a>
+      </li>
+    </ul>
+    <p class="small-note">
+      RSS: from Libsyn under feed settings. Apple/Spotify: replace <code>YOUR_*</code> placeholders with your show IDs from each platform’s dashboard.
     </p>
   </div>
 </section>

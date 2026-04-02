@@ -301,6 +301,64 @@ h1 {
   font-size: 0.9rem;
 }
 
+/* PODCAST — Libsyn HTML5 player */
+.podcast-player-card .podcast-embed {
+  margin-top: 18px;
+  border-radius: 12px;
+  overflow: hidden;
+  border: 1px solid #2a333c;
+  background: #0b0f14;
+}
+
+.podcast-embed__frame {
+  display: block;
+  width: 100%;
+  height: 90px;
+  border: 0;
+  vertical-align: bottom;
+}
+
+.listen-card .listen-list {
+  list-style: none;
+  margin: 20px 0 0;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+
+.listen-link {
+  display: inline-block;
+  padding: 12px 18px;
+  border-radius: 10px;
+  border: 1px solid #39444f;
+  color: #e6e6e6;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 0.95rem;
+  transition: border-color 0.2s ease, color 0.2s ease;
+}
+
+.listen-link:hover {
+  border-color: #c9a96e;
+  color: #fff;
+}
+
+.listen-link-cta {
+  display: inline-block;
+  margin-top: 8px;
+  padding: 12px 18px;
+  border-radius: 10px;
+  background: #c9a96e;
+  color: #0b0f14;
+  text-decoration: none;
+  font-weight: 700;
+}
+
+.listen-link-cta:hover {
+  filter: brightness(1.06);
+}
+
 /* FOOTER */
 .footer {
   text-align: center;
