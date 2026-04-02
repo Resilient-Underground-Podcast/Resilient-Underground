@@ -51,22 +51,45 @@ body {
 .hero {
   position: relative;
   min-height: 720px;
-  background: linear-gradient(180deg, #0f141c 0%, #0b0f14 100%);
+  background-color: #0b0f14;
+  background-image: url("hero-bg.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
 }
 
-/* No image overlay in hero right now */
+/* Readable overlay: keeps gold/white text legible without changing palette */
 .hero::before {
-  content: none;
+  content: "";
+  position: absolute;
+  inset: 0;
+  z-index: 1;
   pointer-events: none;
+  background: linear-gradient(
+    90deg,
+    rgba(8, 10, 14, 0.88) 0%,
+    rgba(8, 10, 14, 0.55) 42%,
+    rgba(8, 10, 14, 0.28) 70%,
+    rgba(8, 10, 14, 0.45) 100%
+  );
 }
 
 .hero-inner {
   position: relative;
+  z-index: 2;
   padding: 80px 32px;
   max-width: 900px;
+}
+
+.hero-inner h1 {
+  text-shadow: 0 2px 28px rgba(0, 0, 0, 0.45);
+}
+
+.hero-inner .hero-copy {
+  text-shadow: 0 1px 14px rgba(0, 0, 0, 0.35);
 }
 
 /* TEXT STYLES */
