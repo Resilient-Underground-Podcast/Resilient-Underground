@@ -8,7 +8,7 @@
     name="description"
     content="Resilient Underground is a podcast and platform focused on resilience, mental strength, sobriety, fatherhood, service, and rebuilding after adversity."
   />
-  <link rel="stylesheet" href="styles.css?v=20260324-1" />
+  <link rel="stylesheet" href="styles.css?v=20260324-2" />
 </head>
 <body>
 
@@ -151,17 +151,43 @@
       </p>
 
       <p>
-        If you want to follow the launch, use the email field below as a placeholder
-        for your future email list integration.
+        Get launch updates—no spam, just the podcast and site news when it matters.
       </p>
 
-      <div class="signup">
-        <input type="email" placeholder="Enter your email" />
-        <button>Notify Me</button>
-      </div>
+      <!-- Formspree: create a free form at https://formspree.io and replace YOUR_FORMSPREE_FORM_ID below -->
+      <form
+        class="signup"
+        action="https://formspree.io/f/YOUR_FORMSPREE_FORM_ID"
+        method="POST"
+      >
+        <input type="hidden" name="_subject" value="Resilient Underground — launch list signup" />
+        <input
+          type="hidden"
+          name="_next"
+          value="https://theresilientunderground.com/index.html#thanks"
+        />
+        <input type="text" name="_gotcha" class="signup-honeypot" tabindex="-1" autocomplete="off" aria-hidden="true" />
+        <label class="signup-label" for="launch-email">Email</label>
+        <div class="signup-row">
+          <input
+            id="launch-email"
+            type="email"
+            name="email"
+            placeholder="Enter your email"
+            required
+            autocomplete="email"
+            inputmode="email"
+          />
+          <button type="submit">Notify Me</button>
+        </div>
+      </form>
+
+      <p id="thanks" class="signup-thanks" tabindex="-1">
+        Thanks — you’re on the list. We’ll email you when there’s news about the launch.
+      </p>
 
       <p class="small-note">
-        This form is currently a visual placeholder until email integration is added.
+        We use Formspree to handle signups securely. You can unsubscribe anytime from emails we send.
       </p>
     </div>
   </section>
