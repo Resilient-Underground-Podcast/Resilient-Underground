@@ -39,6 +39,16 @@ body {
   font-weight: bold;
 }
 
+a.brand {
+  text-decoration: none;
+  color: inherit;
+  cursor: pointer;
+}
+
+a.brand:hover {
+  opacity: 0.92;
+}
+
 .logo-main {
   color: #fff;
 }
