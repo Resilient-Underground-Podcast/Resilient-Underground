@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Podcast | Resilient Underground</title>
   <meta name="description" content="Listen to Resilient Underground—conversations about resilience, mental strength, rebuilding, and purpose." />
-  <link rel="stylesheet" href="styles.css?v=20260402-1"/>
+  <link rel="stylesheet" href="styles.css?v=20260402-2"/>
 </head>
 <body>
 
@@ -36,35 +36,37 @@
 <main>
 
 <!--
-  Libsyn connection (one-time):
-  1. Player: Libsyn Dashboard → Content → open an episode → "Link / Embed" (or Quick Links) → Embed Code.
-     Copy the iframe’s entire `src` URL (starts with https://html5-player.libsyn.com/...) and paste it
-     into the iframe `src` below, replacing the placeholder URL entirely.
-  2. Show page: Replace YOURSHOW in https://YOURSHOW.libsyn.com with your Libsyn podcast subdomain (Settings → Show Settings).
-  3. RSS: Dashboard → Destinations → Libsyn Classic Feed (or Feed & Website) — copy the RSS URL for the RSS link below.
-  4. Apple / Spotify: Use the links from Apple Podcasts Connect and Spotify for Podcasters once the show is listed.
+  Libsyn — after your first episode is published:
+  1. Player: Content → episode → Link/Embed → Embed Code. Paste the <iframe> below the "coming soon" card
+     (or replace that card) using Libsyn’s full embed snippet.
+  2. Show URL: set YOURSHOW in the Libsyn link to your show subdomain.
+  3. RSS: from Libsyn feed settings (often available once the show exists, even before Apple/Spotify).
+  4. Apple / Spotify: add links when the show is approved on each platform.
 -->
 
 <section class="section">
   <div class="section-header">
     <p class="section-kicker">Listen now</p>
-    <h2>Latest episode</h2>
+    <h2>Episodes coming soon</h2>
   </div>
 
-  <div class="card podcast-player-card">
+  <div class="card podcast-player-card podcast-coming-soon">
     <p>
-      Use the player below to listen in the browser. It is powered by your Libsyn-hosted episode.
+      Libsyn’s in-browser player only works once you have a <strong>published episode</strong>. You can still
+      create your show in Libsyn, grab your public show link and RSS when Libsyn shows them, and wire those
+      in below—no recording required for that part.
     </p>
-    <div class="podcast-embed">
-      <iframe
-        class="podcast-embed__frame"
-        title="Resilient Underground — Libsyn player"
-        src="https://html5-player.libsyn.com/embed/episode/id/REPLACE_EPISODE_ID/height/90/theme/custom/thumbnail/yes/direction/backward/desc/yes/font-height/75/"
-        loading="lazy"
-        allowfullscreen
-      ></iframe>
-    </div>
+    <p>
+      Until the first episode is live, point listeners to <a href="index.html#launch">launch updates on the home page</a>
+      so they can get notified.
+    </p>
   </div>
+
+  <!-- First episode live? Paste Libsyn’s iframe here (below this comment), e.g.:
+  <div class="podcast-embed">
+    <iframe class="podcast-embed__frame" title="Resilient Underground — Libsyn player" src="PASTE_SRC_FROM_LIBSYN" loading="lazy" allowfullscreen></iframe>
+  </div>
+  -->
 </section>
 
 <section class="section section-alt">
@@ -74,15 +76,15 @@
   </div>
 
   <div class="card">
-    <h3>Full catalog on Libsyn</h3>
+    <h3>Your show on Libsyn</h3>
     <p>
-      Every episode is published through Libsyn. When you add new episodes in the dashboard, update the
-      “latest episode” player above with that episode’s embed code, or link visitors to your Libsyn site.
+      After you create the show in Libsyn, your public page (and usually your RSS feed) is available even
+      before episodes go live—visitors may see an empty catalog until the first episode publishes.
     </p>
     <p>
       <a class="listen-link-cta" href="https://YOURSHOW.libsyn.com">Open podcast site on Libsyn</a>
     </p>
-    <p class="small-note">Replace <code>YOURSHOW</code> with your Libsyn show subdomain (same as in your Libsyn URL).</p>
+    <p class="small-note">Replace <code>YOURSHOW</code> with your Libsyn subdomain (from your Libsyn dashboard URL).</p>
   </div>
 </section>
 
@@ -93,10 +95,14 @@
   </div>
 
   <div class="card listen-card">
-    <p>Subscribe in your favorite app (add your real URLs as your show goes live on each platform).</p>
+    <p>
+      <strong>RSS</strong> often works as soon as Libsyn gives you a feed URL (even with zero episodes).
+      <strong>Apple Podcasts</strong> and <strong>Spotify</strong> links usually go live only after you submit
+      the show and each platform approves it—replace the placeholders then, or temporarily remove those two links.
+    </p>
     <ul class="listen-list">
       <li>
-        <a class="listen-link" href="https://feeds.libsyn.com/YOUR_FEED_PATH/rss">RSS feed</a>
+        <a class="listen-link" href="https://feeds.libsyn.com/YOUR_FEED_ID/rss">RSS feed</a>
       </li>
       <li>
         <a class="listen-link" href="https://podcasts.apple.com/us/podcast/idYOUR_APPLE_ID">Apple Podcasts</a>
@@ -106,7 +112,7 @@
       </li>
     </ul>
     <p class="small-note">
-      RSS: from Libsyn under feed settings. Apple/Spotify: replace <code>YOUR_*</code> placeholders with your show IDs from each platform’s dashboard.
+      Paste your real RSS URL from Libsyn (Feed / Destinations). Update Apple and Spotify when those directories list your show.
     </p>
   </div>
 </section>
