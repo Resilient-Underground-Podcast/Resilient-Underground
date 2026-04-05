@@ -60,13 +60,12 @@ a.brand:hover {
 /* HERO — one shared block for every page (no per-page inline min-height). */
 .hero {
   position: relative;
-  /* Taller band + viewport scaling shows more of the figure under cover than a short fixed strip. */
-  min-height: clamp(640px, 76vh, 860px);
+  /* contain = full image visible (sky through ground) on all viewports; side or top/bottom bands use background-color. */
+  min-height: clamp(680px, 82vh, 920px);
   background-color: #0b0f14;
   background-image: url("hero-bg.png");
-  background-size: cover;
-  /* Top anchor keeps head in frame; same math on all pages now that height matches. */
-  background-position: center top;
+  background-size: contain;
+  background-position: center center;
   background-repeat: no-repeat;
   display: flex;
   flex-direction: column;
@@ -419,7 +418,7 @@ h1 {
   }
 
   .hero {
-    min-height: clamp(520px, 64vh, 720px);
+    min-height: clamp(560px, 70vh, 780px);
   }
 
   .nav {
