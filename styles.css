@@ -214,6 +214,34 @@ h1 {
   border-color: #c9a96e;
 }
 
+/* Blog — “What Lives Here” thematic list */
+.what-lives-here {
+  margin-top: 28px;
+}
+
+.what-lives-intro {
+  margin-bottom: 18px;
+  color: #ddd;
+}
+
+.what-lives-list {
+  margin: 0;
+  padding-left: 1.25rem;
+  color: #ddd;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.what-lives-list li {
+  padding-left: 0.25rem;
+}
+
+.what-lives-list strong {
+  color: #f0f0f0;
+  font-weight: 600;
+}
+
 /* BLOG */
 .blog-container {
   max-width: 800px;
