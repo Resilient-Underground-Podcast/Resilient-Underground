@@ -427,6 +427,17 @@ h1 {
   color: #fff;
 }
 
+.listen-link--disabled {
+  pointer-events: none;
+  cursor: not-allowed;
+  opacity: 0.9;
+}
+
+.listen-link--disabled:hover {
+  border-color: #39444f;
+  color: #e6e6e6;
+}
+
 .listen-link-cta {
   display: inline-block;
   margin-top: 8px;

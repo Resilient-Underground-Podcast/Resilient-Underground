@@ -7,7 +7,7 @@
   <link rel="apple-touch-icon" href="favicon.png" />
   <title>Podcast | The Resilient Underground</title>
   <meta name="description" content="Listen to The Resilient Underground—conversations about resilience, mental strength, rebuilding, and purpose." />
-  <link rel="stylesheet" href="styles.css?v=20260406-6"/>
+  <link rel="stylesheet" href="styles.css?v=20260406-7"/>
 </head>
 <body>
 
@@ -89,15 +89,16 @@
       <strong>Apple Podcasts</strong> and <strong>Spotify</strong> links usually go live only after you submit
       the show and each platform approves it—replace the placeholders then, or temporarily remove those two links.
     </p>
+    <!-- When RSS / Apple / Spotify URLs are live, change these back to <a class="listen-link" href="..."> -->
     <ul class="listen-list">
       <li>
-        <a class="listen-link" href="https://feeds.libsyn.com/YOUR_FEED_ID/rss">RSS feed</a>
+        <span class="listen-link listen-link--disabled" aria-disabled="true">RSS feed</span>
       </li>
       <li>
-        <a class="listen-link" href="https://podcasts.apple.com/us/podcast/idYOUR_APPLE_ID">Apple Podcasts</a>
+        <span class="listen-link listen-link--disabled" aria-disabled="true">Apple Podcasts</span>
       </li>
       <li>
-        <a class="listen-link" href="https://open.spotify.com/show/YOUR_SPOTIFY_SHOW_ID">Spotify</a>
+        <span class="listen-link listen-link--disabled" aria-disabled="true">Spotify</span>
       </li>
     </ul>
     <p class="small-note">
