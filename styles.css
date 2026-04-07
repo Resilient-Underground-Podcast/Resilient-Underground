@@ -62,16 +62,17 @@ a.brand:hover {
   color: #c9a96e;
 }
 
-/* HERO — one shared block for every page (no per-page inline min-height). */
+/* HERO — one shared block for every page (no per-page inline min-height).
+   hero-bg.png is 1024×682. The photo layer (::after) is exactly that aspect ratio at
+   full width, so the full image is visible with no side letterboxing. If the hero
+   must grow taller for nav + copy, only the area below the photo strip is solid #0b0f14. */
 .hero {
   position: relative;
-  /* Full viewport width even if a containing block is narrower (prevents side “letterbox” bars). */
   width: 100vw;
   margin-left: calc(50% - 50vw);
   margin-right: calc(50% - 50vw);
   box-sizing: border-box;
-  /* Photo on ::after so it always fills the header box edge-to-edge (cover, no side letterboxing). */
-  min-height: clamp(640px, 76vh, 880px);
+  min-height: calc(100vw * 682 / 1024);
   background-color: #0b0f14;
   background-image: none;
   display: flex;
@@ -82,12 +83,16 @@ a.brand:hover {
 .hero::after {
   content: "";
   position: absolute;
-  inset: 0;
+  top: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  height: calc(100vw * 682 / 1024);
   z-index: 0;
   background-color: #0b0f14;
   background-image: url("hero-bg.png");
-  background-size: cover;
-  background-position: center center;
+  background-size: contain;
+  background-position: center top;
   background-repeat: no-repeat;
   pointer-events: none;
 }
@@ -463,10 +468,6 @@ h1 {
 
   h1 {
     font-size: 2.4rem;
-  }
-
-  .hero {
-    min-height: clamp(520px, 64vh, 720px);
   }
 
   .nav {
