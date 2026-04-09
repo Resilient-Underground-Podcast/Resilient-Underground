@@ -378,16 +378,6 @@ h1 {
   text-decoration: underline;
 }
 
-.contact-email-note {
-  margin-top: 16px;
-  color: #b8c0c8;
-  font-size: 0.95rem;
-}
-
-.contact-domain {
-  color: #ddd;
-}
-
 .contact-form-lead {
   margin-top: 12px;
   max-width: 640px;
