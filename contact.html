@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <link rel="icon" href="favicon.png" type="image/png" />
+  <link rel="apple-touch-icon" href="favicon.png" />
+  <title>Contact | The Resilient Underground</title>
+  <meta name="description" content="Get in touch with The Resilient Underground — questions, collaboration, or feedback." />
+  <link rel="stylesheet" href="styles.css?v=20260408-1"/>
+</head>
+<body>
+
+<header class="hero">
+  <nav class="nav">
+    <a class="brand" href="index.html" aria-label="The Resilient Underground home">
+      <span class="logo-main">The Resilient</span>
+      <span class="logo-accent">Underground</span>
+    </a>
+
+    <div class="nav-links">
+      <a href="index.html">Home</a>
+      <a href="podcast.html">Podcast</a>
+      <a href="blog.html">Blog</a>
+      <a href="contact.html" aria-current="page">Contact</a>
+    </div>
+  </nav>
+
+  <div class="hero-inner">
+    <p class="eyebrow">Contact</p>
+    <h1>Let’s connect</h1>
+    <p class="hero-copy">
+      Questions about the podcast, the site, or working together—send a message.
+      You can also reach me directly by email.
+    </p>
+  </div>
+</header>
+
+<main>
+
+<section class="section" aria-label="Contact options">
+  <div class="section-header">
+    <p class="section-kicker">Email</p>
+    <h2>Reach me at The Resilient Underground</h2>
+  </div>
+
+  <div class="card contact-intro-card">
+    <p>
+      <a class="contact-email-link" href="mailto:steven@theresilientunderground.com">steven@theresilientunderground.com</a>
+    </p>
+    <p class="contact-email-note">
+      Use this address in your mail app to reach the inbox for
+      <span class="contact-domain">theresilientunderground.com</span> (including Google Workspace, once your domain’s mail is routed there).
+    </p>
+  </div>
+</section>
+
+<section class="section section-alt" aria-label="Send a message">
+  <div class="section-header">
+    <p class="section-kicker">Message</p>
+    <h2>Send a note through the site</h2>
+    <p class="contact-form-lead">
+      Use the form below and your message will be emailed to
+      <a href="mailto:steven@theresilientunderground.com">steven@theresilientunderground.com</a>.
+      The first time you use this service, check that inbox for a quick activation link from the form provider
+      so submissions are not blocked.
+    </p>
+  </div>
+
+  <!-- FormSubmit posts to the address in the action URL; confirm the inbox once via FormSubmit’s activation email. -->
+  <form
+    class="contact-form"
+    action="https://formsubmit.co/steven@theresilientunderground.com"
+    method="POST"
+  >
+    <input type="hidden" name="_subject" value="The Resilient Underground — site contact" />
+    <input
+      type="hidden"
+      name="_next"
+      value="https://theresilientunderground.com/contact.html#thanks"
+    />
+    <input type="text" name="_honey" class="contact-honeypot" tabindex="-1" autocomplete="off" aria-hidden="true" />
+
+    <div class="contact-field">
+      <label class="contact-label" for="contact-name">Name</label>
+      <input
+        id="contact-name"
+        name="name"
+        type="text"
+        required
+        autocomplete="name"
+        placeholder="Your name"
+      />
+    </div>
+
+    <div class="contact-field">
+      <label class="contact-label" for="contact-email">Email</label>
+      <input
+        id="contact-email"
+        name="email"
+        type="email"
+        required
+        autocomplete="email"
+        inputmode="email"
+        placeholder="Your email (so I can reply)"
+      />
+    </div>
+
+    <div class="contact-field">
+      <label class="contact-label" for="contact-message">Message</label>
+      <textarea
+        id="contact-message"
+        name="message"
+        required
+        rows="7"
+        placeholder="What’s on your mind?"
+      ></textarea>
+    </div>
+
+    <button type="submit" class="contact-submit">Send message</button>
+  </form>
+
+  <p id="thanks" class="contact-thanks" tabindex="-1">
+    Thanks — your message was sent. I’ll get back to you when I can.
+  </p>
+
+  <p class="small-note">
+    This form uses <a href="https://formsubmit.co" rel="noopener noreferrer" class="contact-inline-link">FormSubmit</a>
+    to deliver mail to the address above. It does not replace your Google Workspace settings; it only forwards
+    form submissions to that inbox.
+  </p>
+</section>
+
+</main>
+
+<footer class="footer">
+  <p>© 2026 The Resilient Underground</p>
+</footer>
+
+</body>
+</html>
