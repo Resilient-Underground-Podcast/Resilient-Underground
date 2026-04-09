@@ -253,6 +253,17 @@ h1 {
   margin: auto;
 }
 
+.host-bio p {
+  margin-bottom: 1.35rem;
+  color: #ddd;
+  font-size: 1.05rem;
+  line-height: 1.7;
+}
+
+.host-bio p:last-child {
+  margin-bottom: 0;
+}
+
 .blog-intro {
   font-size: 1.2rem;
   margin-bottom: 24px;
