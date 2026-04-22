@@ -96,9 +96,11 @@ a.brand:hover {
   width: 100%;
   height: var(--hero-photo-h);
   z-index: 0;
+  overflow: hidden;
   background-color: #0b0f14;
   background-image: url("hero-bg.png");
-  background-size: contain;
+  /* Full bleed left–right; strip height unchanged—extra image height clips at bottom */
+  background-size: 100% auto;
   background-position: center top;
   background-repeat: no-repeat;
   pointer-events: none;
