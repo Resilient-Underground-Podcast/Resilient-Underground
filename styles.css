@@ -62,22 +62,29 @@ a.brand:hover {
   color: #c9a96e;
 }
 
-/* HERO — one shared block for every page (no per-page inline min-height).
-   hero-bg.png is 1024×682. The photo layer (::after) is exactly that aspect ratio at
-   full width, so the full image is visible with no side letterboxing. If the hero
-   must grow taller for nav + copy, only the area below the photo strip is solid #0b0f14. */
+/* HERO — one shared block for every page.
+   hero-bg.png is 1024×682. The photo strip uses a fraction of full width-height so the
+   hero is shorter, main content sits higher, and copy sits under the nav (not pinned
+   to the bottom). Taller pages still grow below the strip when copy + nav need it. */
 .hero {
+  --hero-photo-h-raw: min(calc(100vw * 682 / 1024 * 0.53), 500px);
+  --hero-photo-h: max(var(--hero-photo-h-raw), 210px);
   position: relative;
   width: 100vw;
   margin-left: calc(50% - 50vw);
   margin-right: calc(50% - 50vw);
   box-sizing: border-box;
-  min-height: calc(100vw * 682 / 1024);
+  min-height: var(--hero-photo-h);
   background-color: #0b0f14;
   background-image: none;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  justify-content: flex-start;
+}
+
+.hero > .nav {
+  padding-top: 18px;
+  padding-bottom: 18px;
 }
 
 .hero::after {
@@ -87,7 +94,7 @@ a.brand:hover {
   left: 0;
   right: 0;
   width: 100%;
-  height: calc(100vw * 682 / 1024);
+  height: var(--hero-photo-h);
   z-index: 0;
   background-color: #0b0f14;
   background-image: url("hero-bg.png");
@@ -116,12 +123,19 @@ a.brand:hover {
 .hero-inner {
   position: relative;
   z-index: 2;
-  padding: 80px 32px;
+  padding: 28px 32px 36px;
   max-width: 900px;
 }
 
 .hero-inner h1 {
   text-shadow: 0 2px 28px rgba(0, 0, 0, 0.45);
+}
+
+/* Home — tighter headline so copy sits in the left “sky” band beside the figure */
+.hero--home .hero-inner h1 {
+  font-size: clamp(2rem, 4.8vw, 2.85rem);
+  line-height: 1.12;
+  margin-bottom: 14px;
 }
 
 .hero-inner .hero-copy {
@@ -618,6 +632,10 @@ h1 {
 
   h1 {
     font-size: 2.4rem;
+  }
+
+  .hero--home .hero-inner h1 {
+    font-size: clamp(1.75rem, 7vw, 2.35rem);
   }
 
   .nav {
