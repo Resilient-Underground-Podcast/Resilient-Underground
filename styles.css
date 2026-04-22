@@ -150,6 +150,14 @@ a.brand:hover {
   --hero-photo-h: calc(100vw * 682 / 1024);
 }
 
+.hero--blog .hero-inner {
+  max-width: 680px;
+}
+
+.hero--blog .hero-copy {
+  max-width: 590px;
+}
+
 .hero--contact {
   --hero-photo-h: calc(100vw * 682 / 1024);
 }
@@ -159,7 +167,7 @@ a.brand:hover {
 }
 
 .hero--contact .hero-copy {
-  max-width: 560px;
+  max-width: 680px;
 }
 
 .hero-inner .hero-copy {
