@@ -63,12 +63,10 @@ a.brand:hover {
 }
 
 /* HERO — one shared block for every page.
-   hero-bg.png is 1024×682. The photo strip uses a fraction of full width-height so the
-   hero is shorter, main content sits higher, and copy sits under the nav (not pinned
-   to the bottom). Taller pages still grow below the strip when copy + nav need it. */
+   hero-bg.png is 1024×682. Full bleed width with background-size: 100% auto; strip height
+   matches that aspect ratio so the entire image is visible (uniform scale, no cropping). */
 .hero {
-  --hero-photo-h-raw: min(calc(100vw * 682 / 1024 * 0.53), 500px);
-  --hero-photo-h: max(var(--hero-photo-h-raw), 210px);
+  --hero-photo-h: calc(100vw * 682 / 1024);
   position: relative;
   width: 100vw;
   margin-left: calc(50% - 50vw);
@@ -96,10 +94,9 @@ a.brand:hover {
   width: 100%;
   height: var(--hero-photo-h);
   z-index: 0;
-  overflow: hidden;
   background-color: #0b0f14;
   background-image: url("hero-bg.png");
-  /* Full bleed left–right; strip height unchanged—extra image height clips at bottom */
+  /* Full width; height of layer matches image aspect ratio → whole image, proportional */
   background-size: 100% auto;
   background-position: center top;
   background-repeat: no-repeat;
