@@ -137,6 +137,15 @@ a.brand:hover {
   margin-bottom: 14px;
 }
 
+.hero--home .hero-inner {
+  padding-top: 52px;
+  max-width: 680px;
+}
+
+.hero--home .hero-inner .hero-copy {
+  max-width: 620px;
+}
+
 .hero-inner .hero-copy {
   text-shadow: 0 1px 14px rgba(0, 0, 0, 0.35);
 }
