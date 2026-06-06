@@ -170,6 +170,18 @@ a.brand:hover {
   max-width: 680px;
 }
 
+.hero--shop {
+  --hero-photo-h: calc(100vw * 682 / 1024);
+}
+
+.hero--shop .hero-inner {
+  max-width: 700px;
+}
+
+.hero--shop .hero-copy {
+  max-width: 640px;
+}
+
 .hero-inner .hero-copy {
   text-shadow: 0 1px 14px rgba(0, 0, 0, 0.35);
 }
@@ -636,6 +648,131 @@ h1 {
 
 .listen-link-cta:hover {
   filter: brightness(1.06);
+}
+
+/* SHOP — coming-soon banner + product preview cards */
+.coming-soon-card {
+  text-align: center;
+}
+
+.coming-soon-card h2 {
+  margin-bottom: 10px;
+}
+
+.coming-soon-copy {
+  max-width: 640px;
+  margin: 0 auto;
+  color: #c8d0d8;
+  font-size: 1.05rem;
+}
+
+.coming-soon-copy a {
+  color: #c9a96e;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.coming-soon-copy a:hover {
+  text-decoration: underline;
+}
+
+.product-grid {
+  gap: 28px;
+}
+
+.product-card {
+  display: flex;
+  flex-direction: column;
+}
+
+/* Square thumbnail well — holds the placeholder now, the final <img> later */
+.product-thumb {
+  position: relative;
+  aspect-ratio: 1 / 1;
+  border-radius: 10px;
+  overflow: hidden;
+  margin-bottom: 18px;
+  background: #0f1419;
+  border: 1px solid #1f2a36;
+}
+
+.product-thumb__img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.product-thumb__placeholder {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 16px;
+  color: #7f8b96;
+  font-size: 0.95rem;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  background-image: repeating-linear-gradient(
+    45deg,
+    rgba(201, 169, 110, 0.05) 0,
+    rgba(201, 169, 110, 0.05) 12px,
+    transparent 12px,
+    transparent 24px
+  );
+}
+
+.product-badge {
+  position: absolute;
+  top: 12px;
+  left: 12px;
+  padding: 5px 12px;
+  border-radius: 999px;
+  background: rgba(201, 169, 110, 0.92);
+  color: #0b0f14;
+  font-size: 0.72rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.product-name {
+  margin-bottom: 8px;
+}
+
+.product-desc {
+  color: #b8c0c8;
+  font-size: 0.98rem;
+  margin-bottom: 18px;
+}
+
+.product-cta {
+  align-self: flex-start;
+  margin-top: auto;
+  padding: 11px 20px;
+  border-radius: 10px;
+  background: #c9a96e;
+  color: #0b0f14;
+  text-decoration: none;
+  font-weight: 700;
+  font-size: 0.95rem;
+}
+
+.product-cta:hover {
+  filter: brightness(1.06);
+}
+
+.product-cta--disabled {
+  background: #3d3a32;
+  color: #8a8580;
+  cursor: not-allowed;
+  user-select: none;
+}
+
+.product-cta--disabled:hover {
+  filter: none;
 }
 
 /* FOOTER */
