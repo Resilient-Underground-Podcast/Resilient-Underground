@@ -775,6 +775,65 @@ h1 {
   filter: none;
 }
 
+/* CONTENT OVERLAY — page content rides up over the lower hero photo.
+   Photo height is 100vw*682/1024 ≈ 66.6vw; content starts at ≈43% of the
+   photo (the hero figure's waistline) ≈ 28.6vw, so pull-up ≈ 38vw. */
+.overlay-main {
+  position: relative;
+  z-index: 3;
+  margin-top: -38vw;
+}
+
+.overlay-main .section {
+  padding-top: 36px;
+  padding-bottom: 36px;
+}
+
+.overlay-main .section-alt {
+  background: transparent;
+}
+
+.overlay-main .section-header {
+  margin-bottom: 22px;
+}
+
+.overlay-main .section-header h2,
+.overlay-main .section-header p {
+  text-shadow: 0 2px 18px rgba(0, 0, 0, 0.65);
+}
+
+/* Frosted-glass cards keep the photo visible behind the copy */
+.overlay-main .card,
+.overlay-main .host-bio {
+  background: rgba(13, 18, 24, 0.72);
+  backdrop-filter: blur(7px);
+  -webkit-backdrop-filter: blur(7px);
+  border-color: rgba(201, 169, 110, 0.28);
+}
+
+/* Host bio is plain text, not a card — give it the same frosted backing */
+.overlay-main .host-bio {
+  border: 1px solid rgba(201, 169, 110, 0.28);
+  border-radius: 12px;
+  padding: 28px;
+}
+
+/* Below ~1000px the photo strip is too short to hold content — stack normally */
+@media (max-width: 1000px) {
+  .overlay-main {
+    margin-top: 0;
+  }
+
+  .overlay-main .section {
+    padding-top: 80px;
+    padding-bottom: 80px;
+  }
+
+  .overlay-main .section-alt {
+    background: #11161d;
+  }
+}
+
 /* FOOTER */
 .footer {
   text-align: center;
