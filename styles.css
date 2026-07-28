@@ -685,10 +685,10 @@ h1 {
   flex-direction: column;
 }
 
-/* Square thumbnail well — holds the placeholder now, the final <img> later */
+/* Book/planner cover well — 2:3 portrait to match a 6×9 cover */
 .product-thumb {
   position: relative;
-  aspect-ratio: 1 / 1;
+  aspect-ratio: 2 / 3;
   border-radius: 10px;
   overflow: hidden;
   margin-bottom: 18px;
@@ -701,6 +701,16 @@ h1 {
   width: 100%;
   height: 100%;
   object-fit: cover;
+}
+
+/* Small format label under the title (e.g. "Book · Daily practices") */
+.product-tag {
+  color: #c9a96e;
+  font-size: 0.72rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+  margin-bottom: 10px;
 }
 
 .product-thumb__placeholder {
@@ -748,9 +758,15 @@ h1 {
   margin-bottom: 18px;
 }
 
-.product-cta {
-  align-self: flex-start;
+/* Button row — sits at the bottom of the card so uneven copy still aligns */
+.product-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
   margin-top: auto;
+}
+
+.product-cta {
   padding: 11px 20px;
   border-radius: 10px;
   background: #c9a96e;
@@ -762,6 +778,19 @@ h1 {
 
 .product-cta:hover {
   filter: brightness(1.06);
+}
+
+/* Secondary action (e.g. Etsy digital download) — outlined, not gold */
+.product-cta--alt {
+  background: transparent;
+  color: #e6e6e6;
+  border: 1px solid #39444f;
+}
+
+.product-cta--alt:hover {
+  filter: none;
+  border-color: #c9a96e;
+  color: #fff;
 }
 
 .product-cta--disabled {
